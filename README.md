@@ -1,5 +1,15 @@
 # Minero
 
+### IMPORTANT:
+
+**It has been reported that hashes are "stuck", it seems to be a problem with mineXMR.com's Worker API**
+
+**I strongly recommend not using minero.pw until I figure out a fix for this**
+
+**In the meantime, I came up with this solution: [CoinHive Proxy](https://coinhive-proxy.party).**
+
+----
+
 [Minero](https://minero.pw) is a JavaScript Crypto Miner. 
 
 It uses [CoinHive](https://coinhive.com)’s miner to mine [Monero (XMR)](https://getmonero.com), and connects to [minerXMR pool](https://minexmr.com) using a [Stratum Proxy](https://github.com/cazala/coin-hive-stratum). The [API](https://minero-api-01.now.sh/_src) combines mineXMR and [ShapeShift.io](https://shapeshift.io) APIs to retrieve stats and convert currencies. ShapeShift is also used to convert Monero to the desired currency when a payment is done. The [CLI](https://npmjs.org/package/minero) is a wrapper of [coin-hive CLI](https://github.com/cazala/coin-hive). The UI was made in React using [CRA](https://github.com/facebookincubator/create-react-app) and allows you to [see your stats](https://minero.pw/#/currencies/BTC/addresses/176sh81PQupUsFyX6hNL2PTYydSuL7Wu73), it is hosted in [GitHub pages](https://github.com/mineropw/mineropw.github.io). The [proxy](https://minero-proxy-01.now.sh/_src) and the [API](https://minero-api-01.now.sh/_src) are both hosted in [now.sh](https://zeit.co/now).
